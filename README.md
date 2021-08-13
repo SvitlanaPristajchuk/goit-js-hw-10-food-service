@@ -19,7 +19,7 @@
 ![Превью страницы](preview.jpg)
 
 - Обязательно используй
-  [parcel-project-template](https://github.com/goitacademy/parcel-project-template)
+  [parcel-project-template](  )
   для сборки и деплоя проекта.
 - В папке [src](./src) ты найдешь стартовую разметку, стили и данные
 - Массив объектов блюд лежит в [menu.json](./src/menu.json)
