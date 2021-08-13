@@ -1,11 +1,18 @@
 
-import templatesCard from "./templates/menu.hbs";
-import './sass/main.scss';
-import { card } from "./menu.json";
+import templatesCard from './templates/menu.hbs'
+import card  from './menu.json'
+import './sass/main.scss'
+ 
+//console.log(templatesCard);
+//console.log(card);
 
-const markup = templatesCard(card);
-console.log(markup);
+const markup = card.map(templatesCard).join('')
+console.log(markup)
 
-markRef = document.querySelector('.js-menu');
+const refs  = {
+    markCard: document.querySelector('.js-menu')
+}
 
-markRef.insertAdjacentHTML('beforeend', markup);
+
+
+refs.markCard.insertAdjacentHTML('beforeend', markup)
